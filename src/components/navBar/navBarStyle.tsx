@@ -10,7 +10,6 @@ font-size: 1.5rem;
 padding: 2rem;
 background-color: rgba(0, 0, 0, 0.9);
 font-family: 'Montserrat', sans-serif;
-
     h1{
         line-height: 1.2;
         margin-bottom: 1rem;
@@ -31,8 +30,8 @@ font-family: 'Montserrat', sans-serif;
         cursor: pointer;
         padding:20px;
                 &:hover{
-            transform: translateY(-10%);
-            // border-bottom: 2px solid #eee;
+            transform: translateY(+10%);
+            border-bottom: 2px solid #eee;
 
         }
     }
@@ -43,6 +42,7 @@ font-family: 'Montserrat', sans-serif;
         // font-size: 1.2rem;
         // padding:1rem;
     } 
+
 `;
 export const Path = styled(Link)`
 text-decoration: none;
