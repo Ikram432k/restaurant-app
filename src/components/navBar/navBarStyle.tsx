@@ -39,6 +39,10 @@ font-family: 'Montserrat', sans-serif;
     li.active {
         border-bottom: 2px solid #eee;
     }
+    @media only screen and (max-width:768px){
+        // font-size: 1.2rem;
+        // padding:1rem;
+    } 
 `;
 export const Path = styled(Link)`
 text-decoration: none;
