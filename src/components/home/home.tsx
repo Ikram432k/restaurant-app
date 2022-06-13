@@ -15,7 +15,7 @@ const Home =()=>{
                 Welcome to Los Pollos Hermanos. 
             </h3>
             <p>
-                we offer the best chicken in Albuquerque, New Mexico. Dive into Menu section above and check our special recipies
+            Los Pollos Hermanos was a fast-food restaurant chain that specialized in fried chicken, operating across the southwestern United States. The name, pronounced [los ˈpo.ʝos eɾˈma.nos], is ungrammatical Spanish for "The Chicken Brothers." Founded by Gustavo Fring and Max Arciniega, the restaurant chain had fourteen locations throughout the southwest and check our special recipies at Menu section above. 
             </p>
             </div>
             </Contents>
