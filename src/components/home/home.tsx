@@ -1,28 +1,10 @@
 import { Div,Contents } from "./homeStyle";
 import img from '../assets/homeBg/homebb.jpg';
-import {useState,useEffect} from 'react';
 
 
 const Home =()=>{
 
-    useEffect(()=>{
-        fetchItems();
-        console.log(items);
 
-    },[]);
-    
-    const[items,setItems] =useState([]);
-    
-    const fetchItems = async()=>{
-        try{
-        const data = await fetch('https://api.spoonacular.com/recipes/random?apiKey=3198439cd8504af6b112083658cc9fbe&number=10')
-        const items =  await data.json();
-        setItems(items);
-        }
-        catch(error){
-            alert('error occured')
-        }
-    }
 
     return(
         <Div>
