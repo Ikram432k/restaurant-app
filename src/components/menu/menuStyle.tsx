@@ -30,6 +30,11 @@ img{
 h2{
     margin-bottom:10px;
 }
+p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
 &:hover{
     background-color: rgba(99, 99, 99, 0.4);
 }
