@@ -2,10 +2,11 @@ import styled from "styled-components";
 import img from '../assets/homeBg/homebb.jpg';
 
 export const Div = styled.div`
+color: #eee;
 max-width: 700px;
 margin: auto;
 font-size: 2rem;
-background-color: rgba(99, 99, 99, 0.4);
+background-color: rgba(0, 0, 0, 0.6);
 border: 1px solid #222;
 display: flex;
 flex-direction: column;
