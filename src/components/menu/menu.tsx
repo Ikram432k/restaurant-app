@@ -1,46 +1,48 @@
-
+import { Main,Div } from './menuStyle';
 import {useState,useEffect, Key} from 'react';
 
 const Menu =()=>{
     useEffect(()=>{
         fetchItems();
-        console.log(items);
 
     },[]);
     
-    const[items,setItems] =useState<any[]>([]);;
+    const[itemss,setItems] =useState<any[]>([]);;
     
     const fetchItems = async()=>{
         try{
-        const data = await fetch('https://api.spoonacular.com/recipes/random?apiKey=3198439cd8504af6b112083658cc9fbe&number=1&tags=vegetarian')
+        const data = await fetch('https://api.spoonacular.com/recipes/random?apiKey=3198439cd8504af6b112083658cc9fbe&number=10')
         const items =  await data.json();
-        setItems(items);
+        let dataArray = [];
+        for (let x in items){
+            dataArray.push(items[x]);
+            console.log(dataArray)
+
+        }
+        setItems(dataArray[0]);
         }
         catch(error){
             alert('error occured')
         }
     }
     return(
-        <div>
-            {/* {items.map((item: { id: number ; image: string | undefined; title:string; price:number; })=>(
-                <div className='' key={item.id}>
+        <Main>
+            {itemss.map((obj,i)=>(
+                <Div key={i} >
                     <div className='imgdiv'>
-                        <img src={item.image} alt={item.title} />
+                        <img src={obj.image} alt={obj.title} />
                     </div>
-                     <div className='detail' > 
-                    <p>{item.title}</p>
-                    <p>price: {item.price} $</p>
+                    <div className='detail' > 
+                    <h2>{obj.title}</h2>
+                    <p>healthScore:{obj.healthScore}</p>
+                    <p>servings:{obj.servings}</p>
+                    <p>pricePerServing: {obj.pricePerServing} $</p>
                     </div>
  
-                </div>
-            ))} */}
-        </div>
+                </Div>
+            ))}
+        </Main>
     )
 }
 export default Menu;
-// img{
-//     width:15rem;
-//     heigth:auto;
-//     object-fit:contain;
-//     padding-right:1rem;
-// }
+// {key={itemss.indexOf(item)}item: { id: number ; healthScore:number; image: string | undefined; title:string; servings:number; pricePerServing:number; }
