@@ -6,7 +6,7 @@ const Nav =()=>{
         <h1>Los Pollos Hermanos</h1>
         <ul>
             <li>
-                <Path to="/home">Home</Path>
+                <Path to="/">Home</Path>
             </li>
             <li>
                 <Path to="/menu">Menu</Path>
