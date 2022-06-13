@@ -11,7 +11,7 @@ const Menu =()=>{
     
     const fetchItems = async()=>{
         try{
-        const data = await fetch('https://api.spoonacular.com/recipes/random?apiKey=3198439cd8504af6b112083658cc9fbe&number=10')
+        const data = await fetch('https://api.spoonacular.com/recipes/random?apiKey=3198439cd8504af6b112083658cc9fbe&number=20')
         const items =  await data.json();
         let dataArray = [];
         for (let x in items){
@@ -34,9 +34,9 @@ const Menu =()=>{
                     </div>
                     <div className='detail' > 
                     <h2>{obj.title}</h2>
-                    <p>healthScore:{obj.healthScore}</p>
-                    <p>servings:{obj.servings}</p>
-                    <p>pricePerServing: {obj.pricePerServing} $</p>
+                    <p>health Score: {obj.healthScore}</p>
+                    <p>servings: {obj.servings}</p>
+                    <p>pricePer Serving: {obj.pricePerServing}$</p>
                     </div>
  
                 </Div>
