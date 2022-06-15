@@ -36,7 +36,7 @@ const Menu =()=>{
                     <h2>{obj.title}</h2>
                     <p>health Score: {obj.healthScore}</p>
                     <p>servings: {obj.servings}</p>
-                    <p>pricePer Serving: {obj.pricePerServing}$</p>
+                    <p>price: {Math.round(obj.pricePerServing/10)}$</p>
                     </div>
  
                 </Div>
