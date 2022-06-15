@@ -28,9 +28,9 @@ font-family: 'Montserrat', sans-serif;
         border-bottom: 2px solid transparent;
         transition: transform 0.3s;
         cursor: pointer;
-        padding:20px;
+        padding:20px 20px 5px 20px;
                 &:hover{
-            transform: translateY(+10%);
+            // transform: translateY(+10%);
             border-bottom: 2px solid #eee;
 
         }
