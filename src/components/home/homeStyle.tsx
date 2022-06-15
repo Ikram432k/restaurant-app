@@ -16,9 +16,11 @@ height: auto;
 width: auto;
 padding:2rem;
 margin-top:1rem;
+margin-bottom: 25px;
+
 animation: fadeIn 1.5s;
 img{
-    width:15rem;
+    width:20rem;
     heigth:auto;
     object-fit:contain;
     padding-right:1rem;
@@ -29,8 +31,31 @@ h3{
 p{
     font-size:20px;
 }
+@media only screen and (max-width:768px){
+    width:500px;
+    p{
+        font-size: 25px;
+
+    }
+}
 `;
 export const Contents = styled.div`
 display: flex;
+
+@media only screen and (max-width:768px){
+flex-direction: column;
+
+img{
+    width:30rem;
+    heigth:auto;
+    object-fit:contain;
+    padding-bottom:1.5rem;
+    padding-right:0;
+}
+p{
+    line-height: 1.5;
+}
+
+}
 
 `;
