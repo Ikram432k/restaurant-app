@@ -19,7 +19,8 @@ const Feedback =()=>{
         setHide(true);
 
     }
-    const closeForm =()=>{
+    const closeForm =(e:any)=>{
+        e.preventDefault();
         setHide(true);
 
     }
