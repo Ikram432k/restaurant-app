@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import {HashRouter as Router,Routes,Route} from "react-router-dom"
 import { createGlobalStyle } from 'styled-components';
 import img from './components/assets/backgound.webp';
 import Nav from './components/navBar/navBar'
@@ -27,7 +27,7 @@ function App() {
     <GlobalStyle />
     <Nav/>
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/*' element={<Home/>}/>
       <Route path='/menu' element={<Menu/>}/>
       <Route path='/feedback' element={<Feedback/>}/>
       <Route path='/contact' element={<Contact/>}/>
