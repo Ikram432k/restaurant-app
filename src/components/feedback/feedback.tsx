@@ -14,7 +14,6 @@ const Feedback =()=>{
     const getReviewList = async()=>{
         const data = await getReview();
         setReview(data);
-        console.log(review);
     }
     const showForm =()=>{
         setHide(true);
@@ -37,11 +36,9 @@ const Feedback =()=>{
         }
         getReviewList();
         setGetValue({ name: "", reviews: "", date: "" })
-        console.log("added")
     }
     const updateChar =(obj:any)=>{
         setGetValue({...getValue, ...obj});
-        console.log(getValue);
     };
     const handleChange =(e:any)=>{
         const objName =  e.target.name;
@@ -94,7 +91,7 @@ const Feedback =()=>{
                 </div>
                 <div className="btns">
                 <button  type="submit"  onClick={handleSubmit}>submit</button>
-                <button  onClick={closeForm}>cancel</button>
+                <button  type="reset" onClick={closeForm}>cancel</button>
                 </div>
 
             </Form>
