@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/restaurant-app/static/js/main.fef902cb.js",
+    "main.js": "/restaurant-app/static/js/main.a4f62740.js",
     "static/media/homebb.jpg": "/restaurant-app/static/media/homebb.c0b047859ec6e6083c90.jpg",
     "static/media/gusfring.jpg": "/restaurant-app/static/media/gusfring.1a0090d5a1be5880bd86.jpg",
     "static/media/backgound.webp": "/restaurant-app/static/media/backgound.a58e5256f32f936f56bd.webp",
     "index.html": "/restaurant-app/index.html",
-    "main.fef902cb.js.map": "/restaurant-app/static/js/main.fef902cb.js.map"
+    "main.a4f62740.js.map": "/restaurant-app/static/js/main.a4f62740.js.map"
   },
   "entrypoints": [
-    "static/js/main.fef902cb.js"
+    "static/js/main.a4f62740.js"
   ]
 }
