@@ -19,11 +19,7 @@ const Feedback =()=>{
         setHide(true);
 
     }
-    const closeForm =(e:any)=>{
-        e.preventDefault();
-        setHide(true);
 
-    }
     const [getValue,setGetValue] = useState({
         name:"",
         reviews:"",
@@ -92,7 +88,6 @@ const Feedback =()=>{
                 </div>
                 <div className="btns">
                 <button  type="submit"  onClick={handleSubmit}>submit</button>
-                <button  type="reset" onClick={closeForm}>cancel</button>
                 </div>
 
             </Form>
