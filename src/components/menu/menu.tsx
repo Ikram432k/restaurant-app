@@ -16,8 +16,6 @@ const Menu =()=>{
         let dataArray = [];
         for (let x in items){
             dataArray.push(items[x]);
-            console.log(dataArray)
-
         }
         setItems(dataArray[0]);
         }
