@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const Div = styled.div`
+
 display: flex;
 // flex-direction: column;
 align-items: center;
@@ -18,6 +19,7 @@ h2{
 
 }
 .add{
+    position: relative;
     color:white;
     h2{
         border-bottom:2px solid black;
@@ -44,7 +46,6 @@ button{
 }
 .reviewList{
     background-color: rgba(0, 0, 0, 0.6);
-
 }
 .list{
     background-color: rgba(99, 99, 99, 0.4);
@@ -100,4 +101,47 @@ button{
             padding:15px;
         }
     } 
+    .formdiv{
+        
+    }
+`;
+interface hideornot{
+    hide:boolean
+}
+export const Form = styled.form<hideornot>`
+display: ${((props=>props.hide ? `flex` : `none`))} ;
+flex-direction:column;
+align-items: flex-start;
+gap:10px;
+justify-content: center;
+color:white;
+padding: 25px;
+margin: 2rem 5rem 3rem 5rem;
+z-index: 10;
+
+background-color:rgba(0, 0, 0, 0.9);
+
+.formtop{
+    border-bottom:2px solid white;
+    padding-bottom:15px ;
+}
+input{
+    width:14rem;
+    height:1.5rem;
+    border:0;
+    background-color:#aaa;
+    border-radius: 2px;
+    border-color: none;
+}
+.inputdiv{
+    display: flex;
+    align-items: center;
+    gap:3px;
+}
+.btns{
+    display:flex;
+    gap: 10px;
+
+}
+
 `;
