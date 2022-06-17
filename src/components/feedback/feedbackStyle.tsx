@@ -2,12 +2,8 @@ import styled from "styled-components";
 export const Div = styled.div`
 
 display: flex;
-// flex-direction: column;
 align-items: center;
 justify-content: center;
-// height: 525px;
-// // width: 618px;
-// max-width: 700px;
 padding: 4rem;
 font-size: 2rem;
 background-color: rgba(0, 0, 0, 0.6);
@@ -46,6 +42,9 @@ button{
 }
 .reviewList{
     background-color: rgba(0, 0, 0, 0.6);
+    h2{
+        border-bottom:2px solid white;
+    }
 }
 .list{
     background-color: rgba(99, 99, 99, 0.4);
@@ -83,14 +82,9 @@ button{
     @media only screen and (max-width:768px){
         flex-direction: column;
         gap:5rem;
-        .reviewList{
-            h2{
-                font-size:50px;
-  
-            }
-        }
+
         .list{
-            width: 25rem;  
+            width: 20rem;  
         }
         .add{
             display: flex;
@@ -101,8 +95,7 @@ button{
             padding:15px;
         }
     } 
-    .formdiv{
-        
+
     }
 `;
 interface hideornot{
@@ -141,6 +134,10 @@ input{
 .btns{
     display:flex;
     gap: 10px;
+
+}
+@media only screen and (max-width:768px){
+    width: 20rem;  
 
 }
 
