@@ -39,9 +39,19 @@ font-family: 'Montserrat', sans-serif;
         border-bottom: 2px solid #eee;
     }
     @media only screen and (max-width:768px){
+        h1{
+            font-size:25px;
+        }
+        // flex-direction:row;
         // font-size: 1.2rem;
-        // padding:1rem;
-    } 
+        padding:5px;
+        ul{
+        }
+        li{
+            font-size:20px;
+            padding:10px;
+        }
+    }
 
 `;
 export const Path = styled(Link)`
