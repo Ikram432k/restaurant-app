@@ -42,5 +42,11 @@ p{
     padding:1rem;
     img{ 
         width:10rem;}
+        h2{
+            font-size:20px;
+        }
+        p{
+            font-size:15px;
+        }
 } 
 `;
