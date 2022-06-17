@@ -10,7 +10,7 @@ background-color: rgba(0, 0, 0, 0.6);
 font-family: 'Montserrat', sans-serif;
 
 @media only screen and (max-width:768px){
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1,0.8fr);
     padding:1.5rem;
 }  
 `;
