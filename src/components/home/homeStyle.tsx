@@ -32,9 +32,9 @@ p{
     font-size:20px;
 }
 @media only screen and (max-width:768px){
-    width:500px;
+    max-width:400px;
     p{
-        font-size: 25px;
+        font-size: 15px;
 
     }
 }
@@ -46,7 +46,7 @@ display: flex;
 flex-direction: column;
 
 img{
-    width:30rem;
+    width:20rem;
     heigth:auto;
     object-fit:contain;
     padding-bottom:1.5rem;
