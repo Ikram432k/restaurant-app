@@ -52,11 +52,11 @@ img{
     }
 }
 @media only screen and (max-width:768px){
-    width: 500px;
-    font-size: 25px;
+    width: 350px;
+    font-size: 15px;
     .about{
     img{
-        width:25rem;
+        width:15rem;
         heigth:auto;
         object-fit:contain;
         margin-bottom:1rem;
