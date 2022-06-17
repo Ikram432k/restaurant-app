@@ -92,8 +92,9 @@ const Feedback =()=>{
 
             </Form>
 
-            <h2>Feedback from our customers</h2>
             <div className="list">
+            <h2>Feedback from our customers</h2>
+
             {review.map((obj,i)=>(
                 <div key={i} className="details">
                     <h4>{obj.name}</h4>
